@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Builder</title>
+      </head>
+  <body>
+     <figure> <img src="./th (1).jpeg" alt="SA" height="95"></figure>
+     <img src="./th.jpeg" alt="SA" height="70" width="300">
+    <form>
+      <fieldset>
+        <legend><h1>Doctor Appointment Form</h1></legend>
+        <label for="First name"
+          >First name
+          <input
+            type="text"
+            placeholder="First name"
+            name="first name"
+            id="id1"
+            pattern="[a-z]{0,50}"/></label>
+        <label for="Last name"
+          >Last name
+          <input
+            type="text"
+            id="id2"
+            placeholder="Last name"
+            name="last name"
+            pattern="[A-Z]{0,50}"
+        /></label>
+        <br /><br />
+        <label for="Gender"
+          >Gender
+          <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+            <option value="Not to choose">Not to choose</option>
+          </select>
+        </label>
+        <label for="age" name="age">Age
+            <input type="number" value="age" pattern="{3}" min="18">
+        </label>
+        <br /><br />
+        <label for="Tel"
+          >Phone <input type="tel" id="id3" name="number" pattern="{0,11}" /> </label
+        ><br /><br />
+        <label for="Date of the birth"
+          >Date of birth
+          <input type="Date" name="DOB" id="id4" name="id4" max="2006-11-01"><br /><br /></label>
+        <input type="text" placeholder="Street Address" /><br /><br />
+        <input type="text" placeholder="Street Address Line 2" /><br /><br />
+        <label for="city"> City: </label><br /><br />
+        <input list="city"name="City">
+        <datalist id="city">
+          <option value="Hyderabad"></option>
+          <option value="Bangalore"></option>
+          <option value="Chennai"></option>
+          <option value="Mumbai"></option>
+        </datalist>
+        <input type="text" id="id6" name="Region" placeholder="Region" />
+        <br /><br />
+        <input
+          type="number"
+          id="id7"
+          name="zipcode"
+          placeholder="Postal/Zipcode"
+          max="600000"
+        />
+        <input
+          type="text"
+          id="id8"
+          name="district"
+          placeholder="District"
+        /><br /><br />
+        <input
+          type="email"
+          id="id9"
+          placeholder="Enter your email"
+          pattern="[a-z A-Z @.]{0-9}"
+        />
+        <p>Have you previously attended our facility?</p>
+        <label for="yes">Yes</label>
+        <input type="radio" id="id10" name="yes" value="Yes" />
+        <br />
+        <label for="no">No</label>
+        <input type="radio" id="id11" name="yes" value="No" />
+        <br />
+        <p>If Yes, state on which condition and when?</p>
+        <textarea name="condition" rows="08" cols="50" placeholder="Expalin the condition"></textarea>
+        <h2>Appointment Type</h2>
+        <p>Select which appointment types(S) you require</p>
+        <input type="checkbox" id="id12" name="type">Cervix Checkup<br>
+        <input type="checkbox" id="id12" name="type">Heart Checkup<br>
+        <input type="checkbox" id="id12" name="type">Eye Checkup<br>
+        <input type="checkbox" id="id12" name="type">Hearing Checkup<br><br><br>
+
+        <p><H2> Your temperature:</H2></p>
+        <input type="range" min="0" max="100">
+<P><H2> For more information visit the below url:</H2></P>
+<input type="url" value= "">
+       <center> <input type="submit" id="id13" value="Send" formaction="Sub.html"></center>
+      </fieldset>
+    </form>
+  </body>
+</html>
