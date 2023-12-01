@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+</body>
+</html><html>
+<fieldset>
+<legend>STUDENT REGISTRATION FORM</legend>
+<form>
+
+<lable for="First name"> First name</lable>
+<input type="text" placeholder="Enter First name" id="fname" name="fname"  minlength="7" required value="Yerusha" disabled ><br><br>
+
+<lable for="Last name"> Last name</lable>
+<input type="text" placeholder="Enter Last name" id="lname" name="lname"  minlength="7" Value="Kandula" required disabled >
+<br><br>
+
+<lable for="Gender">Gender</lable>
+<input type="Radio" id=male name=gender required >Male
+<input type="Radio" id=Feale name=gender>Female<br><br>
+
+<lable for="Age"> Age </lable>
+<input type="number" placeholder="Enter your age" min="18" max="30" value="20" required style="width:150" name="age"><br><br>
+
+<lable for= "Date of Birth"> Date of Birth</lable>
+<input type="date" min="1990-11-01" max="2005-11-01" name="date"><br><br>
+
+<lable for= "Email"> Email Address </lable>
+<input type="email" placeholder="Enter your email" required style="width:150" value="kandula@gmail.com" name="email"><br><br>
+
+<lable for= "Password"> Password </lable>
+<input type="password" placeholder="Enter your password min 8 characters" minlength="8"required name="pswd" ><br><br>
+
+<lable for= "Password"> Confirm Password </lable>
+<input type="password" placeholder="Confirm password" name="pswd" minlength="8" required><br><br>
+
+<lable for= "Phone number" >Enter your phone number </lable>
+<select id="number" required>
+<option value="+91">+91</select>
+<input type="number" placeholder="Enter your phone number" style="width:150" required><br><br>
+
+<lable for= " Address " >Address </lable> <br><textarea id="Address " name="Address " rows="5" cols="20" placeholder="Enter your address"></textarea> <br><br>
+
+<lable for= "State" > State </lable>
+<select id="state" style="width:150" required >
+<option selected disabled>--Select your state--
+<option value="Telangana"> Telangana
+<option value="Karnataka"> Karnataka
+<option value="Tamilnadu"> Tamilnadu
+<option value="Kerala">Kerala </select><BR><BR>
+
+
+<lable for= "pncde" > Pin code</lable>
+<input type="number" placeholder="Enter your pin code" name="pincode" style="width:150" min="500000"required><br><br>
+
+
+<lable for= "Hobbies" >Hobbies</lable>
+<input type="checkbox" id="music" name="music" required> Music
+<input type="checkbox"id="Movies" name="Movies" required> Movies
+<input type="checkbox"id="Sports" name="Sports" required> Sports
+<input type="checkbox"id="Travel" name="Travel" required> Travel<br><br>
+
+
+<lable for= "Photo" >Upload photo </lable>
+<input type="file" value="choose file" ID="myfile" name="myfile"><br><br>
+
+
+<input type="checkbox" id="declare" name="declare" required> I hereby declare that the above information provided is true and correct.<br><br>
+
+
+<input type="reset">
+<input type="submit">
+</form>
+</fieldset>
+</html>
